@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8350C0D216A58440005FF691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D116A58440005FF691 /* UIKit.framework */; };
+		8350C0D416A58440005FF691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D316A58440005FF691 /* Foundation.framework */; };
+		8350C0D616A58440005FF691 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D516A58440005FF691 /* CoreGraphics.framework */; };
+		8350C0DC16A58440005FF691 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0DA16A58440005FF691 /* InfoPlist.strings */; };
+		8350C0DE16A58440005FF691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C0DD16A58440005FF691 /* main.m */; };
+		8350C0E216A58440005FF691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C0E116A58440005FF691 /* AppDelegate.m */; };
+		8350C0E416A58440005FF691 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0E316A58440005FF691 /* Default.png */; };
+		8350C0E616A58440005FF691 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0E516A58440005FF691 /* Default@2x.png */; };
+		8350C0E816A58440005FF691 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0E716A58440005FF691 /* Default-568h@2x.png */; };
+		8350C0EB16A58440005FF691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C0EA16A58440005FF691 /* ViewController.m */; };
+		8350C0EE16A58440005FF691 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0EC16A58440005FF691 /* ViewController.xib */; };
+		8350C0F616A58440005FF691 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0F516A58440005FF691 /* SenTestingKit.framework */; };
+		8350C0F716A58440005FF691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D116A58440005FF691 /* UIKit.framework */; };
+		8350C0F816A58440005FF691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D316A58440005FF691 /* Foundation.framework */; };
+		8350C10016A58440005FF691 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0FE16A58440005FF691 /* InfoPlist.strings */; };
+		8350C10316A58440005FF691 /* raulyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C10216A58440005FF691 /* raulyticsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8350C0F916A58440005FF691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8350C0C416A58440005FF691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8350C0CC16A58440005FF691;
+			remoteInfo = raulytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8350C0CD16A58440005FF691 /* raulytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raulytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8350C0D116A58440005FF691 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8350C0D316A58440005FF691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8350C0D516A58440005FF691 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8350C0D916A58440005FF691 /* raulytics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "raulytics-Info.plist"; sourceTree = "<group>"; };
+		8350C0DB16A58440005FF691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8350C0DD16A58440005FF691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8350C0DF16A58440005FF691 /* raulytics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "raulytics-Prefix.pch"; sourceTree = "<group>"; };
+		8350C0E016A58440005FF691 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8350C0E116A58440005FF691 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8350C0E316A58440005FF691 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8350C0E516A58440005FF691 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8350C0E716A58440005FF691 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8350C0E916A58440005FF691 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8350C0EA16A58440005FF691 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8350C0ED16A58440005FF691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8350C0F416A58440005FF691 /* raulyticsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = raulyticsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8350C0F516A58440005FF691 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8350C0FD16A58440005FF691 /* raulyticsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "raulyticsTests-Info.plist"; sourceTree = "<group>"; };
+		8350C0FF16A58440005FF691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8350C10116A58440005FF691 /* raulyticsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raulyticsTests.h; sourceTree = "<group>"; };
+		8350C10216A58440005FF691 /* raulyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = raulyticsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8350C0CA16A58440005FF691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8350C0D216A58440005FF691 /* UIKit.framework in Frameworks */,
+				8350C0D416A58440005FF691 /* Foundation.framework in Frameworks */,
+				8350C0D616A58440005FF691 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8350C0F016A58440005FF691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8350C0F616A58440005FF691 /* SenTestingKit.framework in Frameworks */,
+				8350C0F716A58440005FF691 /* UIKit.framework in Frameworks */,
+				8350C0F816A58440005FF691 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8350C0C216A58440005FF691 = {
+			isa = PBXGroup;
+			children = (
+				8350C0D716A58440005FF691 /* raulytics */,
+				8350C0FB16A58440005FF691 /* raulyticsTests */,
+				8350C0D016A58440005FF691 /* Frameworks */,
+				8350C0CE16A58440005FF691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8350C0CE16A58440005FF691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8350C0CD16A58440005FF691 /* raulytics.app */,
+				8350C0F416A58440005FF691 /* raulyticsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8350C0D016A58440005FF691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8350C0D116A58440005FF691 /* UIKit.framework */,
+				8350C0D316A58440005FF691 /* Foundation.framework */,
+				8350C0D516A58440005FF691 /* CoreGraphics.framework */,
+				8350C0F516A58440005FF691 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8350C0D716A58440005FF691 /* raulytics */ = {
+			isa = PBXGroup;
+			children = (
+				8350C0E016A58440005FF691 /* AppDelegate.h */,
+				8350C0E116A58440005FF691 /* AppDelegate.m */,
+				8350C0E916A58440005FF691 /* ViewController.h */,
+				8350C0EA16A58440005FF691 /* ViewController.m */,
+				8350C0EC16A58440005FF691 /* ViewController.xib */,
+				8350C0D816A58440005FF691 /* Supporting Files */,
+			);
+			path = raulytics;
+			sourceTree = "<group>";
+		};
+		8350C0D816A58440005FF691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8350C0D916A58440005FF691 /* raulytics-Info.plist */,
+				8350C0DA16A58440005FF691 /* InfoPlist.strings */,
+				8350C0DD16A58440005FF691 /* main.m */,
+				8350C0DF16A58440005FF691 /* raulytics-Prefix.pch */,
+				8350C0E316A58440005FF691 /* Default.png */,
+				8350C0E516A58440005FF691 /* Default@2x.png */,
+				8350C0E716A58440005FF691 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8350C0FB16A58440005FF691 /* raulyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8350C10116A58440005FF691 /* raulyticsTests.h */,
+				8350C10216A58440005FF691 /* raulyticsTests.m */,
+				8350C0FC16A58440005FF691 /* Supporting Files */,
+			);
+			path = raulyticsTests;
+			sourceTree = "<group>";
+		};
+		8350C0FC16A58440005FF691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8350C0FD16A58440005FF691 /* raulyticsTests-Info.plist */,
+				8350C0FE16A58440005FF691 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8350C0CC16A58440005FF691 /* raulytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8350C10616A58441005FF691 /* Build configuration list for PBXNativeTarget "raulytics" */;
+			buildPhases = (
+				8350C0C916A58440005FF691 /* Sources */,
+				8350C0CA16A58440005FF691 /* Frameworks */,
+				8350C0CB16A58440005FF691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = raulytics;
+			productName = raulytics;
+			productReference = 8350C0CD16A58440005FF691 /* raulytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8350C0F316A58440005FF691 /* raulyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8350C10916A58441005FF691 /* Build configuration list for PBXNativeTarget "raulyticsTests" */;
+			buildPhases = (
+				8350C0EF16A58440005FF691 /* Sources */,
+				8350C0F016A58440005FF691 /* Frameworks */,
+				8350C0F116A58440005FF691 /* Resources */,
+				8350C0F216A58440005FF691 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8350C0FA16A58440005FF691 /* PBXTargetDependency */,
+			);
+			name = raulyticsTests;
+			productName = raulyticsTests;
+			productReference = 8350C0F416A58440005FF691 /* raulyticsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8350C0C416A58440005FF691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = eltallerdigital;
+			};
+			buildConfigurationList = 8350C0C716A58440005FF691 /* Build configuration list for PBXProject "raulytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8350C0C216A58440005FF691;
+			productRefGroup = 8350C0CE16A58440005FF691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8350C0CC16A58440005FF691 /* raulytics */,
+				8350C0F316A58440005FF691 /* raulyticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8350C0CB16A58440005FF691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8350C0DC16A58440005FF691 /* InfoPlist.strings in Resources */,
+				8350C0E416A58440005FF691 /* Default.png in Resources */,
+				8350C0E616A58440005FF691 /* Default@2x.png in Resources */,
+				8350C0E816A58440005FF691 /* Default-568h@2x.png in Resources */,
+				8350C0EE16A58440005FF691 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8350C0F116A58440005FF691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8350C10016A58440005FF691 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8350C0F216A58440005FF691 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8350C0C916A58440005FF691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8350C0DE16A58440005FF691 /* main.m in Sources */,
+				8350C0E216A58440005FF691 /* AppDelegate.m in Sources */,
+				8350C0EB16A58440005FF691 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8350C0EF16A58440005FF691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8350C10316A58440005FF691 /* raulyticsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8350C0FA16A58440005FF691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8350C0CC16A58440005FF691 /* raulytics */;
+			targetProxy = 8350C0F916A58440005FF691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8350C0DA16A58440005FF691 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8350C0DB16A58440005FF691 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8350C0EC16A58440005FF691 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8350C0ED16A58440005FF691 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		8350C0FE16A58440005FF691 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8350C0FF16A58440005FF691 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8350C10416A58440005FF691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8350C10516A58440005FF691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8350C10716A58441005FF691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "raulytics/raulytics-Prefix.pch";
+				INFOPLIST_FILE = "raulytics/raulytics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8350C10816A58441005FF691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "raulytics/raulytics-Prefix.pch";
+				INFOPLIST_FILE = "raulytics/raulytics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8350C10A16A58441005FF691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/raulytics.app/raulytics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "raulytics/raulytics-Prefix.pch";
+				INFOPLIST_FILE = "raulyticsTests/raulyticsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8350C10B16A58441005FF691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/raulytics.app/raulytics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "raulytics/raulytics-Prefix.pch";
+				INFOPLIST_FILE = "raulyticsTests/raulyticsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8350C0C716A58440005FF691 /* Build configuration list for PBXProject "raulytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8350C10416A58440005FF691 /* Debug */,
+				8350C10516A58440005FF691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8350C10616A58441005FF691 /* Build configuration list for PBXNativeTarget "raulytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8350C10716A58441005FF691 /* Debug */,
+				8350C10816A58441005FF691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8350C10916A58441005FF691 /* Build configuration list for PBXNativeTarget "raulyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8350C10A16A58441005FF691 /* Debug */,
+				8350C10B16A58441005FF691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8350C0C416A58440005FF691 /* Project object */;
+}
