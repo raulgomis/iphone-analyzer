@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NodeJSWSManager.h"
 
-@interface CrashLogsViewController : UITableViewController <NodeJSWSManagerDelegate, NSURLConnectionDataDelegate>
+@interface CrashLogsViewController : UITableViewController <NodeJSWSManagerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *crashLogsArray;
 

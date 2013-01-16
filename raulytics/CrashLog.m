@@ -10,4 +10,11 @@
 
 @implementation CrashLog
 
+-(NSString *)description
+{
+    NSString *sal = [NSString stringWithFormat:@"[%@] %@", self.username, self.exception];
+    
+    return sal;
+}
+
 @end

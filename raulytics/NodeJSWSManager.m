@@ -26,7 +26,7 @@
                                           httpMethod:@"GET"];
     
     [op addCompletionHandler:^(MKNetworkOperation* completedOperation) {
-        //[self parseCrashLogs:completedOperation.responseData];
+        [self parseCrashLogs:completedOperation.responseData];
     }
     errorHandler:^(MKNetworkOperation* completedRequest, NSError* error) {
         NSLog(@"ERROR....");

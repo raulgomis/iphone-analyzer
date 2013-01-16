@@ -46,23 +46,47 @@
     [manager getCrashLogs];
     */
     
+    
+    NSURL *url = [NSURL URLWithString:@"http://raul:3000/listCrashLog"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         if (error != nil)
+         {
+             NSLog(@"ERROR!");
+         }
+         else {
+             [self receivedData:data];
+         }
+         
+     }];
+    
+    /*
     NSURLConnection *urlConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/listCrashLog"]] delegate:self];
     
     [urlConnection start];
+     */
 }
 
-
--(void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+- (void)receivedData:(NSData *)data
 {
-    NSLog(@"didReceiveData: %@",  data);
+    
+    
+    self.crashLogsArray = [[NSMutableArray alloc] init];
+
+    NSString* newStr = [[NSString alloc] initWithData:data                                              encoding:NSUTF8StringEncoding];
+    NSLog(@"receivedData: %@", newStr);
     
     NSError *error;
-    NSDictionary *jsonData = [NSJSONSerialization
-                              JSONObjectWithData:data
-                              options: kNilOptions
-                              error:&error];
+    NSArray *arrayCrashes = [NSJSONSerialization
+                             JSONObjectWithData:data
+                             options: NSJSONReadingMutableContainers
+                             error:&error];
+
     
-    NSArray *arrayCrashes = [jsonData objectForKey:@"listado"];
     for (NSDictionary *dic in arrayCrashes){
         CrashLog *crashLog = [[CrashLog alloc] init];
         crashLog.username = [dic objectForKey:@"username"];
@@ -72,7 +96,7 @@
         
         [self.crashLogsArray addObject:crashLog];
         
-        NSLog(@"eeeee");
+        NSLog(@"%@", crashLog);
     }
     
     [self.tableView reloadData];
@@ -102,12 +126,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     
     // Configure the cell...
     CrashLog *crashLog = [self.crashLogsArray objectAtIndex:indexPath.row];
     
     cell.textLabel.text = crashLog.exception;
+    cell.detailTextLabel.text = crashLog.username;
     
     return cell;
 }
@@ -150,6 +180,10 @@
     return YES;
 }
 */
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
 
 #pragma mark - Table view delegate
 

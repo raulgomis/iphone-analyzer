@@ -8,11 +8,16 @@
 
 #import "AppDelegate.h"
 #import "CrashLogsViewController.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Parse init
+    [Parse setApplicationId:@"pmXQaDdUzrR9TU3q8apjnb2dJ85oWuIPFZ85bOe3"
+                  clientKey:@"255j6UWHMKtFaeJE95o2b8n4OMZr83HABLv0liKi"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
