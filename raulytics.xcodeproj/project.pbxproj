@@ -16,13 +16,26 @@
 		8350C0E416A58440005FF691 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0E316A58440005FF691 /* Default.png */; };
 		8350C0E616A58440005FF691 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0E516A58440005FF691 /* Default@2x.png */; };
 		8350C0E816A58440005FF691 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0E716A58440005FF691 /* Default-568h@2x.png */; };
-		8350C0EB16A58440005FF691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C0EA16A58440005FF691 /* ViewController.m */; };
-		8350C0EE16A58440005FF691 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0EC16A58440005FF691 /* ViewController.xib */; };
 		8350C0F616A58440005FF691 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0F516A58440005FF691 /* SenTestingKit.framework */; };
 		8350C0F716A58440005FF691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D116A58440005FF691 /* UIKit.framework */; };
 		8350C0F816A58440005FF691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C0D316A58440005FF691 /* Foundation.framework */; };
 		8350C10016A58440005FF691 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8350C0FE16A58440005FF691 /* InfoPlist.strings */; };
 		8350C10316A58440005FF691 /* raulyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C10216A58440005FF691 /* raulyticsTests.m */; };
+		8350C10E16A58474005FF691 /* CrashLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C10D16A58474005FF691 /* CrashLogsViewController.m */; };
+		8350C11216A584CF005FF691 /* CrashLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C11116A584CF005FF691 /* CrashLog.m */; };
+		8350C11A16A58573005FF691 /* NodeJSWSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C11916A58573005FF691 /* NodeJSWSManager.m */; };
+		8350C13116A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C11E16A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.m */; };
+		8350C13216A5882F005FF691 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12016A5882F005FF691 /* NSData+Base64.m */; };
+		8350C13316A5882F005FF691 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12216A5882F005FF691 /* NSDate+RFC1123.m */; };
+		8350C13416A5882F005FF691 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12416A5882F005FF691 /* NSDictionary+RequestEncoding.m */; };
+		8350C13516A5882F005FF691 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12616A5882F005FF691 /* NSString+MKNetworkKitAdditions.m */; };
+		8350C13616A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12816A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		8350C13716A5882F005FF691 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12A16A5882F005FF691 /* MKNetworkEngine.m */; };
+		8350C13816A5882F005FF691 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C12D16A5882F005FF691 /* MKNetworkOperation.m */; };
+		8350C13916A5882F005FF691 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8350C13016A5882F005FF691 /* Reachability.m */; };
+		8350C13B16A5891B005FF691 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C13A16A5891B005FF691 /* CFNetwork.framework */; };
+		8350C13D16A5892D005FF691 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C13C16A5892D005FF691 /* Security.framework */; };
+		8350C13F16A5894A005FF691 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8350C13E16A5894A005FF691 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +62,40 @@
 		8350C0E316A58440005FF691 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8350C0E516A58440005FF691 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8350C0E716A58440005FF691 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8350C0E916A58440005FF691 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8350C0EA16A58440005FF691 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8350C0ED16A58440005FF691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		8350C0F416A58440005FF691 /* raulyticsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = raulyticsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8350C0F516A58440005FF691 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8350C0FD16A58440005FF691 /* raulyticsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "raulyticsTests-Info.plist"; sourceTree = "<group>"; };
 		8350C0FF16A58440005FF691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8350C10116A58440005FF691 /* raulyticsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raulyticsTests.h; sourceTree = "<group>"; };
 		8350C10216A58440005FF691 /* raulyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = raulyticsTests.m; sourceTree = "<group>"; };
+		8350C10C16A58474005FF691 /* CrashLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLogsViewController.h; sourceTree = "<group>"; };
+		8350C10D16A58474005FF691 /* CrashLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashLogsViewController.m; sourceTree = "<group>"; };
+		8350C11016A584CF005FF691 /* CrashLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLog.h; sourceTree = "<group>"; };
+		8350C11116A584CF005FF691 /* CrashLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashLog.m; sourceTree = "<group>"; };
+		8350C11816A58573005FF691 /* NodeJSWSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeJSWSManager.h; sourceTree = "<group>"; };
+		8350C11916A58573005FF691 /* NodeJSWSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeJSWSManager.m; sourceTree = "<group>"; };
+		8350C11D16A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		8350C11E16A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		8350C11F16A5882F005FF691 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		8350C12016A5882F005FF691 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		8350C12116A5882F005FF691 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		8350C12216A5882F005FF691 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		8350C12316A5882F005FF691 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		8350C12416A5882F005FF691 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		8350C12516A5882F005FF691 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		8350C12616A5882F005FF691 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		8350C12716A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		8350C12816A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		8350C12916A5882F005FF691 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		8350C12A16A5882F005FF691 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		8350C12B16A5882F005FF691 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		8350C12C16A5882F005FF691 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		8350C12D16A5882F005FF691 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		8350C12F16A5882F005FF691 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8350C13016A5882F005FF691 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8350C13A16A5891B005FF691 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8350C13C16A5892D005FF691 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8350C13E16A5894A005FF691 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8350C13F16A5894A005FF691 /* SystemConfiguration.framework in Frameworks */,
+				8350C13D16A5892D005FF691 /* Security.framework in Frameworks */,
+				8350C13B16A5891B005FF691 /* CFNetwork.framework in Frameworks */,
 				8350C0D216A58440005FF691 /* UIKit.framework in Frameworks */,
 				8350C0D416A58440005FF691 /* Foundation.framework in Frameworks */,
 				8350C0D616A58440005FF691 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +128,9 @@
 		8350C0C216A58440005FF691 = {
 			isa = PBXGroup;
 			children = (
+				8350C13E16A5894A005FF691 /* SystemConfiguration.framework */,
+				8350C13C16A5892D005FF691 /* Security.framework */,
+				8350C13A16A5891B005FF691 /* CFNetwork.framework */,
 				8350C0D716A58440005FF691 /* raulytics */,
 				8350C0FB16A58440005FF691 /* raulyticsTests */,
 				8350C0D016A58440005FF691 /* Frameworks */,
@@ -117,12 +161,14 @@
 		8350C0D716A58440005FF691 /* raulytics */ = {
 			isa = PBXGroup;
 			children = (
+				8350C11B16A5882F005FF691 /* MKNetworkKit */,
+				8350C11716A5851D005FF691 /* Manager */,
+				8350C10F16A584AD005FF691 /* Classes */,
 				8350C0E016A58440005FF691 /* AppDelegate.h */,
 				8350C0E116A58440005FF691 /* AppDelegate.m */,
-				8350C0E916A58440005FF691 /* ViewController.h */,
-				8350C0EA16A58440005FF691 /* ViewController.m */,
-				8350C0EC16A58440005FF691 /* ViewController.xib */,
 				8350C0D816A58440005FF691 /* Supporting Files */,
+				8350C10C16A58474005FF691 /* CrashLogsViewController.h */,
+				8350C10D16A58474005FF691 /* CrashLogsViewController.m */,
 			);
 			path = raulytics;
 			sourceTree = "<group>";
@@ -158,6 +204,66 @@
 				8350C0FE16A58440005FF691 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8350C10F16A584AD005FF691 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8350C11016A584CF005FF691 /* CrashLog.h */,
+				8350C11116A584CF005FF691 /* CrashLog.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8350C11716A5851D005FF691 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8350C11816A58573005FF691 /* NodeJSWSManager.h */,
+				8350C11916A58573005FF691 /* NodeJSWSManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		8350C11B16A5882F005FF691 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				8350C11C16A5882F005FF691 /* Categories */,
+				8350C12916A5882F005FF691 /* MKNetworkEngine.h */,
+				8350C12A16A5882F005FF691 /* MKNetworkEngine.m */,
+				8350C12B16A5882F005FF691 /* MKNetworkKit.h */,
+				8350C12C16A5882F005FF691 /* MKNetworkOperation.h */,
+				8350C12D16A5882F005FF691 /* MKNetworkOperation.m */,
+				8350C12E16A5882F005FF691 /* Reachability */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		8350C11C16A5882F005FF691 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8350C11D16A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.h */,
+				8350C11E16A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.m */,
+				8350C11F16A5882F005FF691 /* NSData+Base64.h */,
+				8350C12016A5882F005FF691 /* NSData+Base64.m */,
+				8350C12116A5882F005FF691 /* NSDate+RFC1123.h */,
+				8350C12216A5882F005FF691 /* NSDate+RFC1123.m */,
+				8350C12316A5882F005FF691 /* NSDictionary+RequestEncoding.h */,
+				8350C12416A5882F005FF691 /* NSDictionary+RequestEncoding.m */,
+				8350C12516A5882F005FF691 /* NSString+MKNetworkKitAdditions.h */,
+				8350C12616A5882F005FF691 /* NSString+MKNetworkKitAdditions.m */,
+				8350C12716A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.h */,
+				8350C12816A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8350C12E16A5882F005FF691 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8350C12F16A5882F005FF691 /* Reachability.h */,
+				8350C13016A5882F005FF691 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +341,6 @@
 				8350C0E416A58440005FF691 /* Default.png in Resources */,
 				8350C0E616A58440005FF691 /* Default@2x.png in Resources */,
 				8350C0E816A58440005FF691 /* Default-568h@2x.png in Resources */,
-				8350C0EE16A58440005FF691 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +377,18 @@
 			files = (
 				8350C0DE16A58440005FF691 /* main.m in Sources */,
 				8350C0E216A58440005FF691 /* AppDelegate.m in Sources */,
-				8350C0EB16A58440005FF691 /* ViewController.m in Sources */,
+				8350C10E16A58474005FF691 /* CrashLogsViewController.m in Sources */,
+				8350C11216A584CF005FF691 /* CrashLog.m in Sources */,
+				8350C11A16A58573005FF691 /* NodeJSWSManager.m in Sources */,
+				8350C13116A5882F005FF691 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				8350C13216A5882F005FF691 /* NSData+Base64.m in Sources */,
+				8350C13316A5882F005FF691 /* NSDate+RFC1123.m in Sources */,
+				8350C13416A5882F005FF691 /* NSDictionary+RequestEncoding.m in Sources */,
+				8350C13516A5882F005FF691 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				8350C13616A5882F005FF691 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				8350C13716A5882F005FF691 /* MKNetworkEngine.m in Sources */,
+				8350C13816A5882F005FF691 /* MKNetworkOperation.m in Sources */,
+				8350C13916A5882F005FF691 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +417,6 @@
 				8350C0DB16A58440005FF691 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8350C0EC16A58440005FF691 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8350C0ED16A58440005FF691 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		8350C0FE16A58440005FF691 /* InfoPlist.strings */ = {

@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "CrashLogsViewController.h"
 
 @implementation AppDelegate
 
@@ -16,8 +15,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+
+    CrashLogsViewController *crashLogVC = [[CrashLogsViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:crashLogVC];
+    
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
