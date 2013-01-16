@@ -12,7 +12,7 @@
 
 -(NSString *)description
 {
-    NSString *sal = [NSString stringWithFormat:@"[%@] %@", self.username, self.exception];
+    NSString *sal = [NSString stringWithFormat:@"[%@] %@", self.appID, self.exception];
     
     return sal;
 }

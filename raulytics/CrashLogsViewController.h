@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NodeJSWSManager.h"
+#import "WebServiceManager.h"
+#import "Application.h"
 
-@interface CrashLogsViewController : UITableViewController <NodeJSWSManagerDelegate>
+@interface CrashLogsViewController : UITableViewController <WebServiceManagerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *crashLogsArray;
+@property (strong, nonatomic) Application *application;
 
 @end

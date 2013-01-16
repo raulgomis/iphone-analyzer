@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSDate *date;
 @property (strong, nonatomic) NSString *exception;
 @property (strong, nonatomic) NSString *stacktrace;
-@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *appID;
 
 
 @end

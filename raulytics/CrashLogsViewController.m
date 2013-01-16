@@ -31,75 +31,17 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.title = NSLocalizedString(@"Crash Logs", @"");
-    
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
-
-    
+        
     [self loadCrashLogs];
 }
 
 -(void) loadCrashLogs
 {
-    /*
-    NodeJSWSManager *manager = [[NodeJSWSManager alloc] initWithHostName:kBaseWSUrlDev];
-    manager.delegate = self;
-    [manager getCrashLogs];
-    */
+    [SVProgressHUD showWithStatus:@"Loading crashes..."];
     
-    
-    NSURL *url = [NSURL URLWithString:@"http://raul:3000/listCrashLog"];
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
-     {
-         if (error != nil)
-         {
-             NSLog(@"ERROR!");
-         }
-         else {
-             [self receivedData:data];
-         }
-         
-     }];
-    
-    /*
-    NSURLConnection *urlConnection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/listCrashLog"]] delegate:self];
-    
-    [urlConnection start];
-     */
-}
-
-- (void)receivedData:(NSData *)data
-{
-    
-    
-    self.crashLogsArray = [[NSMutableArray alloc] init];
-
-    NSString* newStr = [[NSString alloc] initWithData:data                                              encoding:NSUTF8StringEncoding];
-    NSLog(@"receivedData: %@", newStr);
-    
-    NSError *error;
-    NSArray *arrayCrashes = [NSJSONSerialization
-                             JSONObjectWithData:data
-                             options: NSJSONReadingMutableContainers
-                             error:&error];
-
-    
-    for (NSDictionary *dic in arrayCrashes){
-        CrashLog *crashLog = [[CrashLog alloc] init];
-        crashLog.username = [dic objectForKey:@"username"];
-        //crashLog.date = [dic valueForKey:@"date"];
-        crashLog.exception = [dic objectForKey:@"exception"];
-        crashLog.stacktrace = [dic objectForKey:@"stacktrace"];
-        
-        [self.crashLogsArray addObject:crashLog];
-        
-        NSLog(@"%@", crashLog);
-    }
-    
-    [self.tableView reloadData];
+    WebServiceManager *wsManager = [WebServiceManager sharedManager];
+    wsManager.delegate = self;
+    [wsManager loadCrashLogsOfApplication:self.application.appID];
 }
 
 
@@ -135,9 +77,9 @@
     
     // Configure the cell...
     CrashLog *crashLog = [self.crashLogsArray objectAtIndex:indexPath.row];
-    
+
     cell.textLabel.text = crashLog.exception;
-    cell.detailTextLabel.text = crashLog.username;
+    cell.detailTextLabel.text = crashLog.appID;
     
     return cell;
 }
@@ -198,13 +140,24 @@
      */
 }
 
-#pragma mark - NodeJSManager Delegate
+#pragma mark - WebServiceManager Delegate
 
--(void) crashLogsFetched:(NSMutableArray *)crashLogs
+-(void) crashLogListReceived:(NSMutableArray *)array;
 {
-    self.crashLogsArray = [NSArray arrayWithArray:crashLogs];
+    self.crashLogsArray = [NSArray arrayWithArray:array];
     
     [self.tableView reloadData];
+    
+    [SVProgressHUD showSuccessWithStatus:@"Crashes loaded"];
+
+}
+
+-(void) errorDetected
+{
+    NSLog(@"errorDetected - CrashLogsViewController");
+    
+    [SVProgressHUD showErrorWithStatus:@"Error loading"];
+
 }
 
 

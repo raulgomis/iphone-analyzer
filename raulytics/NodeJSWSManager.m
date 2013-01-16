@@ -53,7 +53,7 @@
     
     for (NSDictionary *dic in jsonData){
         CrashLog *crashLog = [[CrashLog alloc] init];
-        crashLog.username = [dic objectForKey:@"username"];
+        crashLog.appID = [dic objectForKey:@"applicationId"];
         //crashLog.date = [dic valueForKey:@"date"];
         crashLog.exception = [dic objectForKey:@"exception"];
         crashLog.stacktrace = [dic objectForKey:@"stacktrace"];

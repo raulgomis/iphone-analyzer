@@ -11,6 +11,8 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <Parse/Parse.h>
+    #import "SVProgressHUD.h"
 #endif
 
-#define kBaseWSUrlDev   @"localhost:3000"
+#define kBaseWSUrlDev   @"raul:3000"
